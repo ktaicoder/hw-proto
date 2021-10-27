@@ -1,2 +1,1 @@
-# hw-proto
-Hardware Protocol Definition
+# Hardware Common
