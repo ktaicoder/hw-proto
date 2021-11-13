@@ -4,11 +4,11 @@
     "type": "git",
     "url": "https://github.com/ktaicoder/hw-proto.git"
   },
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "build/cjs/index.js",
   "module": "build/es/index.js",
   "private": false,
-  "author": "",
+  "author": "ktaicoder",
   "license": "MIT",
   "scripts": {
     "build": "rimraf build && rollup -c rollup.config.all.js",
