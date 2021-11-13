@@ -9,8 +9,8 @@ export interface IWiseXboardControl extends IHwControl {
     digitalRead(): Promise<number[]>
     digitalWrite(pin: number, value: number): Promise<void>
     setHumanoidMotion(index: number): Promise<void>
-    dcMotorStop(): Promise<void>
-    dcMotorSpeed(l1: number, r1: number, l2: number, r2: number): Promise<void>
+    stopDCMotor(): Promise<void>
+    setDCMotorSpeed(l1: number, r1: number, l2: number, r2: number): Promise<void>
     setServoMotorAngle(pinNo: number, angle: number): Promise<void>
 }
 
@@ -24,8 +24,8 @@ export const wiseXboard: HardwareDescriptor = {
         'digitalRead',
         'digitalWrite',
         'setHumanoidMotion',
-        'dcMotorStop',
-        'dcMotorSpeed',
+        'stopDCMotor',
+        'setDCMotorSpeed',
         'setServoMotorAngle',
     ],
 }
