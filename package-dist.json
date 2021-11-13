@@ -1,28 +1,28 @@
 {
-  "name": "@ktaicoder/hw-proto",
-  "version": "1.0.7",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ktaicoder/hw-proto.git"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
-  "main": "cjs/index.js",
-  "author": "ktaicoder",
-  "license": "MIT",
-  "dependencies": {},
-  "peerDependencies": {},
-  "description": "KT AI Block coding hardware control",
-  "bugs": {
-    "url": "https://github.com/ktaicoder/hw-control/issues"
-  },
-  "homepage": "https://aicodingblock.kt.co.kr",
-  "keywords": [
-    "kt",
-    "aicodingblock",
-    "blockcoding",
-    "hardware",
-    "prototype"
-  ]
+    "name": "@ktaicoder/hw-proto",
+    "version": "1.0.9",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ktaicoder/hw-proto.git"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "main": "cjs/index.js",
+    "author": "ktaicoder",
+    "license": "MIT",
+    "dependencies": {},
+    "peerDependencies": {},
+    "description": "KT AI Block coding hardware control",
+    "bugs": {
+        "url": "https://github.com/ktaicoder/hw-control/issues"
+    },
+    "homepage": "https://aicodingblock.kt.co.kr",
+    "keywords": [
+        "kt",
+        "aicodingblock",
+        "blockcoding",
+        "hardware",
+        "prototype"
+    ]
 }
