@@ -4,12 +4,15 @@
     "type": "git",
     "url": "https://github.com/ktaicoder/hw-proto.git"
   },
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "build/cjs/index.js",
   "module": "build/es/index.js",
   "private": false,
   "author": "ktaicoder",
   "license": "MIT",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "scripts": {
     "build": "rimraf build && rollup -c rollup.config.all.js",
     "build:es": "rimraf build && rollup -c rollup.config.es.js",

@@ -4,8 +4,11 @@
     "type": "git",
     "url": "https://github.com/ktaicoder/hw-proto.git"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "private": false,
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "cjs/index.js",
   "author": "ktaicoder",
   "license": "MIT",
