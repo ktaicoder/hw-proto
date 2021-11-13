@@ -1,17 +1,28 @@
 {
   "name": "@ktaicoder/hw-proto",
+  "version": "1.0.7",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ktaicoder/hw-proto.git"
+    "url": "git+https://github.com/ktaicoder/hw-proto.git"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "access": "public"
   },
-  "private": false,
-  "version": "1.0.5",
   "main": "cjs/index.js",
   "author": "ktaicoder",
   "license": "MIT",
   "dependencies": {},
-  "peerDependencies": {}
+  "peerDependencies": {},
+  "description": "KT AI Block coding hardware control",
+  "bugs": {
+    "url": "https://github.com/ktaicoder/hw-control/issues"
+  },
+  "homepage": "https://aicodingblock.kt.co.kr",
+  "keywords": [
+    "kt",
+    "aicodingblock",
+    "blockcoding",
+    "hardware",
+    "prototype"
+  ]
 }

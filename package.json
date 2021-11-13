@@ -1,18 +1,17 @@
 {
   "name": "@ktaicoder/hw-proto",
+  "version": "1.0.8",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ktaicoder/hw-proto.git"
+    "url": "git+https://github.com/ktaicoder/hw-proto.git"
   },
-  "version": "1.0.5",
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "build/cjs/index.js",
   "module": "build/es/index.js",
-  "private": false,
   "author": "ktaicoder",
   "license": "MIT",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
   "scripts": {
     "build": "rimraf build && rollup -c rollup.config.all.js",
     "build:es": "rimraf build && rollup -c rollup.config.es.js",
@@ -52,5 +51,17 @@
     "ts-node": "^10.3.0",
     "tslib": "^2.3.1",
     "typescript": "^4.4.3"
-  }
+  },
+  "description": "KT AI Block coding hardware control",
+  "bugs": {
+    "url": "https://github.com/ktaicoder/hw-control/issues"
+  },
+  "homepage": "https://aicodingblock.kt.co.kr",
+  "keywords": [
+    "kt",
+    "aicodingblock",
+    "blockcoding",
+    "hardware",
+    "prototype"
+  ]
 }
