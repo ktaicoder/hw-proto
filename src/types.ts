@@ -58,3 +58,10 @@ export interface IHwInfo {
     pcDrivers: PcDriver[]
     firmwareFile?: string
 }
+
+/**
+ * 하드웨어 디스크립터
+ */
+export type HardwareDescriptor = {
+    commands: string[]
+}

@@ -1,4 +1,4 @@
-import { IHwControl } from '../types'
+import { HardwareDescriptor, IHwControl } from '../types'
 
 /**
  * 컨트롤 인터페이스 - 클라이언트(ex: 블록코딩)에서 사용
@@ -8,4 +8,10 @@ export interface IMicrobitControl extends IHwControl {
     analogRead(): Promise<number[]>
 }
 
-export const MicrobitCommands = ['analogRead']
+/**
+ * 하드웨어 디스크립터
+ * 변수 이름을 HwId로 해야 함
+ */
+export const microbit: HardwareDescriptor = {
+    commands: ['analogRead'],
+}

@@ -1,4 +1,4 @@
-import { IHwControl } from '../types'
+import { HardwareDescriptor, IHwControl } from '../types'
 
 /**
  * 컨트롤 인터페이스 - 클라이언트(ex: 블록코딩)에서 사용
@@ -13,11 +13,17 @@ export interface IWiseXboardControl extends IHwControl {
     dcMotorSpeed(l1: number, r1: number, l2: number, r2: number): Promise<void>
 }
 
-export const WiseXboardCommands = [
-    'analogRead',
-    'digitalRead',
-    'digitalWrite',
-    'setHumanoidMotion',
-    'dcMotorStop',
-    'dcMotorSpeed',
-]
+/**
+ * 하드웨어 디스크립터: commands
+ * 변수이름을 hwId로 해야 함
+ */
+export const wiseXboard: HardwareDescriptor = {
+    commands: [
+        'analogRead', //
+        'digitalRead',
+        'digitalWrite',
+        'setHumanoidMotion',
+        'dcMotorStop',
+        'dcMotorSpeed',
+    ],
+}
