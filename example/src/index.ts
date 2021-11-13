@@ -21,7 +21,7 @@ async function send() {
         requestId,
         hwId: 'wise-xboard',
         cmd: 'digitalWrite',
-        args: [1, 1]
+        args: [1, 1],
     })
     console.log('sent success, wait')
     const response: DeviceCtlResponse = await firstValueFrom(connector.observeDeviceCtlResponseV2(requestId))

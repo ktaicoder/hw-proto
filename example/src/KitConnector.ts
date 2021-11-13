@@ -134,7 +134,7 @@ export class KitConnector {
         hwId: string
         cmd: string
         args?: any[]
-    }): Promise<boolean> => {
+    }): Promise<void> => {
         this.connect()
         const src$ = this.observeSocket().pipe(
             filter((sock) => sock !== null),
@@ -146,13 +146,7 @@ export class KitConnector {
             takeUntil(this.destroy$),
         )
 
-        try {
-            await firstValueFrom(src$)
-            return true
-        } catch (err: any) {
-            console.log(err)
-        }
-        return false
+        await firstValueFrom(src$)
     }
 
     private _notifyState = (state: KitState) => {

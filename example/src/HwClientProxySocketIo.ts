@@ -41,7 +41,6 @@ export class HwClientProxySocketIo {
             }
         } catch (err: any) {
             console.log(err)
-            // TODO error wrapping
             throw err
         }
     }

@@ -11,6 +11,7 @@ export interface IWiseXboardControl extends IHwControl {
     setHumanoidMotion(index: number): Promise<void>
     dcMotorStop(): Promise<void>
     dcMotorSpeed(l1: number, r1: number, l2: number, r2: number): Promise<void>
+    setServoMotorAngle(pinNo: number, angle: number): Promise<void>
 }
 
 /**
@@ -25,5 +26,6 @@ export const wiseXboard: HardwareDescriptor = {
         'setHumanoidMotion',
         'dcMotorStop',
         'dcMotorSpeed',
+        'setServoMotorAngle',
     ],
 }
