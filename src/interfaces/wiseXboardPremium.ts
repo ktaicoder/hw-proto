@@ -21,11 +21,6 @@ export interface IWiseXboardPremiumControl extends IHwControl {
     setDCMotor2SpeedP(l2: number, r2: number): Promise<void>
 
     /**
-     * 리모콘 값 읽기
-     */
-    readRemoconP(): Promise<number>
-
-    /**
      * 모든 DC 모터 끄기
      */
     stopDCMotorP(): Promise<void>
@@ -33,7 +28,12 @@ export interface IWiseXboardPremiumControl extends IHwControl {
     /**
      * n번핀 서보모터 각도 angle로 정하기
      */
-    setServoMotorAngleP(pinNum: number, angle: number, speed: number): Promise<void>
+    setServoMotorAngleP(pinNum: number, angle: number): Promise<void>
+
+    /**
+     * 리모콘 값 읽기
+     */
+    readRemoconP(): Promise<number>
 
     /**
      * 아날로그 핀 읽기
@@ -67,9 +67,9 @@ export const wiseXboardPremium: HardwareDescriptor = {
         'setDCMotorSpeedP', //
         'setDCMotor1SpeedP',
         'setDCMotor2SpeedP',
-        'readRemoconP',
         'stopDCMotorP',
         'setServoMotorAngleP',
+        'readRemoconP',
         'analogReadP',
         'digitalReadP',
         'digitalWriteP',
