@@ -12,6 +12,10 @@ export interface IWiseXboardControl extends IHwControl {
     stopDCMotor(): Promise<void>
     setDCMotorSpeed(l1: number, r1: number, l2: number, r2: number): Promise<void>
     setServoMotorAngle(pinNum: number, angle: number): Promise<void>
+
+    // 자동 호출 함수
+    onAfterOpen(): Promise<void>
+    onBeforeClose(): Promise<void>
 }
 
 /**
@@ -27,5 +31,9 @@ export const wiseXboard: HardwareDescriptor = {
         'stopDCMotor',
         'setDCMotorSpeed',
         'setServoMotorAngle',
+
+        // 자동 호출 함수
+        'onAfterOpen',
+        'onBeforeClose',
     ],
 }
