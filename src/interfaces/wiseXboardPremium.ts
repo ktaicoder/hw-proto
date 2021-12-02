@@ -56,6 +56,10 @@ export interface IWiseXboardPremiumControl extends IHwControl {
      * 키값 전송
      */
     sendKeyP(key: number): Promise<void>
+
+    // 자동 호출 함수
+    onAfterOpen(): Promise<void>
+    onBeforeClose(): Promise<void>
 }
 
 /**
@@ -74,5 +78,9 @@ export const wiseXboardPremium: HardwareDescriptor = {
         'digitalReadP',
         'digitalWriteP',
         'sendKeyP',
+
+        // 자동 호출 함수
+        'onAfterOpen',
+        'onBeforeClose',
     ],
 }
